@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soolvere</title>
+    <link rel="shortcut icon" href="img/favh.png" type="image/x-icon">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="js/count/jquery.countdown.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+  <div class="banner">
+    <div class="container d-flex justify-content-center align-items-center">
+     
+
+      <div class="row">
+        
+        <div class="offset-lg-1 col-lg-5 col-md-12">
+          <div class="wrapper1 ">
+            <!-- logo -->
+            <div class="logo mx-lg-0 mx-auto">
+              <img src="img/404 page for team-06.png" class="img-fluid first-logo" alt="logo">
+              
+            </div>
+
+            <div class="logo2 d-md-none d-sm-block mx-lg-0 mx-auto">
+              <img src="img/icon.png" class="img-fluid sec-logo" alt="logo">
+              
+            </div>
+            <!-- header  -->
+            <div class="h1-txt text-lg-start text-center">
+              <h1 class="">Website <span id="element"></span></h1>
+            </div>
+          </div>
+          
+         
+        </div>
+        <!-- image  -->
+        <div class="col-lg-6 col-md-12">
+          <div class="wrapper2">
+            <div class="count">
+              <p id="demo" class=""></p>
+            </div>
+            <div class="image">
+              <img src="img/png.png" alt="" class="img-fluid">
+  
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+    </div>
+  </div>
+ 
+
+
+
+    
+
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Apr 31, 2023 23:59:59").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+   
+    
+      <!-- count down  -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/type effect/typed.umd.js"></script>
+      
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

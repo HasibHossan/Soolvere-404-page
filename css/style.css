@@ -1,0 +1,74 @@
+html{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/Poppins-Bold.ttf);
+  }
+
+@font-face {
+    font-family: poppins-m;
+    src: url(../font/Poppins-Medium.ttf);
+  }
+.banner{
+  position: relative;
+    background-image: url(../img/1440.png);
+    background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;       
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.container{
+  /* height: 80vh; */
+}
+.logo{
+  margin-top: 50px;
+}
+
+h1{
+  font-size: 50px;
+  font-family: "poppins-m";
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+.wrapper1{
+
+}
+
+.logo{
+  width: 300px;
+}
+.logo2{
+  width: 100px;
+  height: 100px;
+}
+
+.wrapper2{
+  position: relative;
+  margin-top: 150px;
+}
+
+.image{
+ 
+}
+
+.count{
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  left: 150px;
+}
+#demo{
+    text-transform: uppercase;
+    font-family:"poppins-m";
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
